@@ -111,7 +111,7 @@ async def youtube_dl_call_back(bot, update):
         os.makedirs(tmp_directory_for_each_user)
     if len(custom_file_name) > 64:
         await bot.edit_message_text(
-            text="File Name is greater than 64 characters. Reducing File name to 64 charterers.",
+            text="File Name is greater than 64 characters. Reducing File name to 64 characters.",
             chat_id=update.message.chat.id,
             message_id=update.message.message_id
         )
@@ -337,9 +337,9 @@ async def youtube_dl_call_back(bot, update):
             media_album_p = []
             if images is not None:
                 i = 0
-                caption = "© @AnyDLBot"
+                caption = "© @fileshomeofficial"
                 if is_w_f:
-                    caption = "/upgrade to Plan D to remove the watermark\n© @AnyDLBot"
+                    caption = "/upgrade to Plan D to remove the watermark\n© @fileshomeofficial"
                 for image in images:
                     if os.path.exists(image):
                         if i == 0:
